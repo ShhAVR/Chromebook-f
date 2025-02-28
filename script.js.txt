@@ -1,0 +1,10 @@
+function openApp(appName) {
+    let apps = ["chrome", "youtube", "discord"];
+    apps.forEach(app => {
+        document.getElementById(app + "App").style.display = (app === appName) ? "block" : "none";
+    });
+}
+
+function closeApp(appName) {
+    document.getElementById(appName + "App").style.display = "none";
+}
